@@ -1,7 +1,29 @@
 aid: 555-comic
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/555-comic.png
 name: 555 Comic
-description: 555 Comic is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  555 Comic is an interactive storytelling and virtual-influencer studio founded
+  by Ben Watanabe. It runs casts of anime-styled virtual characters — such as
+  @CRC_Luna — who publish real-time alternate-reality-game (ARG) stories across
+  TikTok, Twitter/X and Instagram, letting fans create original characters (OCs)
+  and interact with official storylines across four interconnected fictional
+  worlds: Conspiracy Research Club, All Night Arcade, The Convenience Store, and
+  a Paranormal Research Club. Stories unfold in real time on "Poppy-valley
+  Standard Time," with fans participating through social comments. 555 Comic is a
+  Techstars Music portfolio company. It publishes no public developer API,
+  OpenAPI, or documentation surface; this profile captures its identity and a
+  domain-security probe of its web host.
 url: https://raw.githubusercontent.com/api-evangelist/555-comic/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,6 +36,13 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Entertainment
+- Media
+- Storytelling
+- Virtual Influencers
+- Anime
+- Social Media
+- ARG
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/555-comic-domain-security.yml
 - type: Website
   url: https://555comic.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
